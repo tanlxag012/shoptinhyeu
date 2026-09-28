@@ -18,15 +18,15 @@ export default function Footer() {
           <div style={{ gridColumn: 'span 1' }}>
             {/* <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 24, fontWeight: 600, letterSpacing: 5, color: 'white', marginBottom: 14, display: 'flex', alignItems: 'center', gap: 8 }}>
               <span style={{ width: 7, height: 7, borderRadius: '50%', background: '#B8952A', display: 'inline-block' }} />
-              4EM
+              SHOPTINHYEU
             </div> */}
             <Logo />
             <p style={{ fontSize: 13, lineHeight: 1.85, marginBottom: 20, maxWidth: 280 }}>
-              4EM là thương hiệu đồ chơi người lớn phong thủy thuần thiên nhiên, kết nối con người với năng lượng đất trời.
+              SHOPTINHYEU là thương hiệu đồ chơi người lớn phong thủy thuần thiên nhiên, kết nối con người với năng lượng đất trời.
             </p>
             <div style={{ fontSize: 13, lineHeight: 2.1 }}>
-              <div>Hotline: <a href="tel:19002929" style={{ color: 'white' }}>1900 29 29 17</a></div>
-              <div>Email: <a href="mailto:hello@4em.vn" style={{ color: 'white' }}>hello@4em.vn</a></div>
+              <div>Hotline: <a href="tel:0931599994" style={{ color: 'white' }}>0931 599 994</a></div>
+              <div>Email: <a href="mailto:hello@SHOPTINHYEU.vn" style={{ color: 'white' }}>hello@SHOPTINHYEU.vn</a></div>
             </div>
 
             {/* Social – hiện ở đây trên mobile */}
@@ -72,8 +72,8 @@ export default function Footer() {
           fontSize: 12,
           color: 'rgba(255,255,255,.35)',
         }}>
-          <p>© 2025 4EM. All rights reserved.</p>
-          <p style={{ fontSize: 11 }}>Thiết kế bởi <span style={{ color: 'rgba(255,255,255,.6)' }}>4EM Studio</span></p>
+          <p>© 2025 SHOPTINHYEU. All rights reserved.</p>
+          <p style={{ fontSize: 11 }}>Thiết kế bởi <span style={{ color: 'rgba(255,255,255,.6)' }}>SHOPTINHYEU Studio</span></p>
         </div>
       </div>
     </footer>
@@ -84,9 +84,9 @@ export default function Footer() {
 function ShowroomBlock() {
   const [open, setOpen] = useState(true)
   const showrooms = [
-    { name: '4EM – Quận 1',   addr: '123 Lê Lợi, Bến Nghé, Q.1, TP.HCM' },
-    { name: '4EM – Quận 3',   addr: '456 Võ Văn Tần, P.5, Q.3, TP.HCM' },
-    { name: '4EM – Thủ Đức',  addr: '789 Võ Văn Ngân, Linh Chiểu, TP. Thủ Đức' },
+    { name: 'SHOPTINHYEU – Quận 1',   addr: '123 Lê Lợi, Bến Nghé, Q.1, TP.HCM' },
+    { name: 'SHOPTINHYEU – Quận 3',   addr: '456 Võ Văn Tần, P.5, Q.3, TP.HCM' },
+    { name: 'SHOPTINHYEU – Thủ Đức',  addr: '789 Võ Văn Ngân, Linh Chiểu, TP. Thủ Đức' },
   ]
 
   return (

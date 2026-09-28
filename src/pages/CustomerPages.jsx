@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link, useNavigate, useSearchParams } from 'react-router-dom'
+import { Link, useNavigate, useSearchParams, useParams } from 'react-router-dom'
 import { productAPI, categoryAPI, orderAPI, couponAPI, authAPI } from '../api'
 import { useAuth, useCart } from '../context'
 import { useScrollReveal } from '../hooks'
@@ -336,7 +336,7 @@ export function ProductsPage() {
    PRODUCT DETAIL PAGE
 ════════════════════════════════════════════════════════════ */
 export function ProductDetailPage() {
-  const slug = window.location.pathname.split('/').pop()
+  const { slug } = useParams()
   const [data, setData]       = useState(null)
   const [loading, setLoading] = useState(true)
   const [qty, setQty]         = useState(1)
@@ -348,10 +348,15 @@ export function ProductDetailPage() {
   const { user }    = useAuth()
 
   useEffect(() => {
-    setLoading(true)
-    window.scrollTo(0, 0)
-    productAPI.getOne(slug).then(r => setData(r)).finally(() => setLoading(false))
-  }, [slug])
+  setLoading(true)
+  setQty(1)
+  setTab("desc")
+  window.scrollTo(0, 0)
+
+  productAPI.getOne(slug)
+    .then(r => setData(r))
+    .finally(() => setLoading(false))
+}, [slug])
 
   if (loading) return <div style={{ paddingTop:64 }}><PageLoader/></div>
   if (!data?.product) return <div style={{ paddingTop:64 }}><EmptyState icon="❌" title="Không tìm thấy sản phẩm"/></div>

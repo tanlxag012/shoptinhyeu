@@ -23,7 +23,7 @@ export default function Logo({ size = 24, color = '#61401e', dotColor = '#B8952A
         color,
         fontVariantNumeric: 'lining-nums',
         lineHeight: 1,
-      }}>4</span>
+      }}>SHOP</span>
       {/* "EM" – Cormorant Garamond serif */}
       <span style={{
         fontFamily: "'Cormorant Garamond', serif",
@@ -33,7 +33,7 @@ export default function Logo({ size = 24, color = '#61401e', dotColor = '#B8952A
         color,
         lineHeight: 1,
         marginLeft: -10,   // kéo sát số 4 lại
-      }}>EM</span>
+      }}>TINHYEU</span>
     </span>
   )
 }
